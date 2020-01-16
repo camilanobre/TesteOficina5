@@ -1,0 +1,5 @@
+export * from './user.service'
+export * from './config'
+export * from './posts.service'
+export * from './comentarios.service'
+export * from './albuns.service'
