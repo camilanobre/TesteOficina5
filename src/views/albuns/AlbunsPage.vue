@@ -127,6 +127,9 @@ export default {
     ...mapState({
       albuns: state => state.albuns.all.items
     }),
+        ...mapState({
+      editAlbum: state => state.editAlbum.albumEdit
+    }),
     ...mapState({
       account: state => state.account
     }),
@@ -153,6 +156,9 @@ export default {
   methods: {
     ...mapActions('albuns', {
       getAll: 'getAll',
+    }),
+        ...mapActions('editAlbum', {
+      getView: 'getView'
     }),
     callFunction: function () {
       var v = this

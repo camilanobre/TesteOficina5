@@ -7,6 +7,7 @@ import DetalharPosts from '../views/posts/DetalharPostPage'
 import Comentarios from '../views/comentarios/ComentariosPage'
 import DetalharComentarios from '../views/comentarios/DetalharComentarioPage'
 import Albuns from '../views/albuns/AlbunsPage'
+import DetalharAlbuns from '../views/albuns/DetalharAlbumPage'
 
 Vue.use(Router)
 
@@ -19,7 +20,8 @@ export const router = new Router({
     { path: '/detalharPosts', component: DetalharPosts },
     { path: '/comentarios', component: Comentarios },
     { path: '/detalharComentarios', component: DetalharComentarios },
-    { path: '/albuns', component: Albuns }
+    { path: '/albuns', component: Albuns },
+    { path: '/detalharAlbuns', component: DetalharAlbuns },
   ]
 })
 
